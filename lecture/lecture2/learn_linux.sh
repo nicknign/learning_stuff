@@ -1,0 +1,1 @@
+python train.py --data_file data/linux_source_code/linux_c.pkl --output_dir linux_c_small_256_128_lr1e-3_dr0 --hidden_size 256 --embedding_size 128 --num_unrollings 100 --debug --encoding utf-8 --learning_rate 0.001 --dropout 0
