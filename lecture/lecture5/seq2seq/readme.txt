@@ -1,0 +1,1 @@
+﻿将helper.py粘贴到本地的seq2seq/seq2seq/contrib/seq2seq目录下面

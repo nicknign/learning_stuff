@@ -1,0 +1,32 @@
+ValueError: The two structures don't have the same number of elements. 
+
+First structure: 
+
+AttentionWrapperState(
+
+  cell_state=<tf.Tensor 'seq2seq/decoder/decoder/while/Identity_3:0' shape=(80, 400) dtype=float32>,
+
+  attention=<tf.Tensor 'seq2seq/decoder/decoder/while/Identity_4:0' shape=(80, 800) dtype=float32>,
+
+  time=<tf.Tensor 'seq2seq/decoder/decoder/while/Identity_5:0' shape=() dtype=int32>,
+
+  alignments=<tf.Tensor 'seq2seq/decoder/decoder/while/Identity_6:0' shape=(80, ?) dtype=float32>,
+
+  alignment_history=<tensorflow.python.ops.tensor_array_ops.TensorArray object at 0x7f8b69f3fcf8>
+)
+
+Second structure: 
+
+AttentionWrapperState(
+
+  cell_state=<tf.Tensor 'seq2seq/decoder/decoder/while/BasicDecoderStep/decoder/output_projection_wrapper/output_projection_wrapper/attention_wrapper/attention_wrapper/gru_cell/add:0' shape=(80, 400) dtype=float32>,
+
+  attention=<tf.Tensor 'seq2seq/decoder/decoder/while/BasicDecoderStep/decoder/output_projection_wrapper/output_projection_wrapper/attention_wrapper/attention_layer/MatMul:0' shape=(80, 800) dtype=float32>,
+
+  time=<tf.Tensor 'seq2seq/decoder/decoder/while/BasicDecoderStep/decoder/output_projection_wrapper/output_projection_wrapper/attention_wrapper/add:0' shape=() dtype=int32>,
+  
+  alignments=<tf.Tensor 'seq2seq/decoder/decoder/while/BasicDecoderStep/decoder/output_projection_wrapper/output_projection_wrapper/attention_wrapper/Softmax:0' shape=(80, ?) dtype=float32>, 
+  
+  alignment_history=()
+).
+
